@@ -22,9 +22,9 @@ public class NotificationService {
 
     private final NotificationRepository notificationRepository;
 
-    public void sendAndSaveNotification(Notification notification) {
-        log.info("Sending notification: {}", notification);
+    public void consumeAndSaveNotification(Notification notification) {
+        log.info("Consuming notification: {}", notification);
         notificationRepository.save(notification);
-        log.info("Notification sent and saved to database!");
+        log.info("Notification consumed and saved to database!");
     }
 }

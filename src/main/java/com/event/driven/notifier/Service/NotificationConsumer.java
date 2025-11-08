@@ -29,12 +29,13 @@ public class NotificationConsumer {
 
     @KafkaListener(topics = "notificationTopic", groupId = "group-id")
     public void notificationListener(Notification notification) {
+        log.info("Received notification from Kafka: {} and starting to process it", notification);
         Instant triggerTime = Instant.now().plus(1, ChronoUnit.MINUTES);
 
         log.info("Scheduling notification for: {}", triggerTime);
 
         taskScheduler.schedule(
-                () -> notificationService.sendAndSaveNotification(notification),
+                () -> notificationService.consumeAndSaveNotification(notification),
                 triggerTime
         );    }
 }
