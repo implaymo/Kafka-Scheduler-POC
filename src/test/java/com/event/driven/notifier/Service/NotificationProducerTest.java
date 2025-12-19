@@ -1,14 +1,14 @@
 package com.event.driven.notifier.Service;
 
+
 import java.time.Duration;
 import java.util.Optional;
 
-import org.awaitility.Awaitility;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.annotation.Import;
-import org.testcontainers.junit.jupiter.Testcontainers;
+import org.testcontainers.shaded.org.awaitility.Awaitility;
 
 import com.event.driven.notifier.Domain.Notification;
 import com.event.driven.notifier.Repository.NotificationRepository;
@@ -18,11 +18,10 @@ import static java.util.concurrent.TimeUnit.SECONDS;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @SpringBootTest
-@Testcontainers
 @Import(TestContainersConfiguration.class)
-public class NotificationProducerTest {
+class NotificationProducerTest {
 
-    @Autowired 
+    @Autowired
     private NotificationProducer notificationProducer;
 
     @Autowired 
