@@ -15,7 +15,7 @@ import jakarta.validation.constraints.Size;
 import lombok.Builder;
 
 @Builder
-public class UserDto {
+public class UserRegisterDto {
 
     @NotBlank(message = "Email is required")
     @Email
