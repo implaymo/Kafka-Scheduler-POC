@@ -5,7 +5,7 @@
  * This software is the proprietary information of Present Technologies Lda.
  * Use is subject to license terms.
  */
-package com.event.driven.notifier.Repository;
+package com.event.driven.notifier.repository;
 
 import java.util.Optional;
 import java.util.UUID;
@@ -13,7 +13,7 @@ import java.util.UUID;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.event.driven.notifier.Domain.Notification;
+import com.event.driven.notifier.domain.Notification;
 
 @Repository
 public interface NotificationRepository extends JpaRepository<Notification, UUID> {

@@ -5,7 +5,7 @@
  * This software is the proprietary information of Present Technologies Lda.
  * Use is subject to license terms.
  */
-package com.event.driven.notifier.Controller;
+package com.event.driven.notifier.controller;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -16,10 +16,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.event.driven.notifier.Domain.Notification;
-import com.event.driven.notifier.Dto.NotificationDto;
-import com.event.driven.notifier.Mapper.NotificationMapperInterface;
-import com.event.driven.notifier.Service.NotificationProducer;
+import com.event.driven.notifier.domain.Notification;
+import com.event.driven.notifier.dto.NotificationDto;
+import com.event.driven.notifier.mapper.NotificationMapperInterface;
+import com.event.driven.notifier.service.NotificationProducer;
 
 @Slf4j
 @RestController

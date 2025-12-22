@@ -5,7 +5,7 @@
  * This software is the proprietary information of Present Technologies Lda.
  * Use is subject to license terms.
  */
-package com.event.driven.notifier.Service;
+package com.event.driven.notifier.service;
 
 
 import lombok.RequiredArgsConstructor;
@@ -16,7 +16,7 @@ import java.util.UUID;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 
-import com.event.driven.notifier.Domain.Notification;
+import com.event.driven.notifier.domain.Notification;
 
 @Slf4j
 @Service

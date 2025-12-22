@@ -5,12 +5,12 @@
  * This software is the proprietary information of Present Technologies Lda.
  * Use is subject to license terms.
  */
-package com.event.driven.notifier.Mapper;
+package com.event.driven.notifier.mapper;
 
 import org.mapstruct.Mapper;
 
-import com.event.driven.notifier.Domain.Notification;
-import com.event.driven.notifier.Dto.NotificationDto;
+import com.event.driven.notifier.domain.Notification;
+import com.event.driven.notifier.dto.NotificationDto;
 
 
 @Mapper(componentModel =  "spring")

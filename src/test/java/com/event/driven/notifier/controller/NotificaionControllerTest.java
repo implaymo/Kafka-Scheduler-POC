@@ -8,7 +8,7 @@
  */
 
 
-package com.event.driven.notifier.Controller;
+package com.event.driven.notifier.controller;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -17,7 +17,7 @@ import org.springframework.context.annotation.Import;
 import org.springframework.test.web.servlet.client.RestTestClient;
 import org.springframework.web.context.WebApplicationContext;
 
-import com.event.driven.notifier.Dto.NotificationDto;
+import com.event.driven.notifier.dto.NotificationDto;
 import com.event.driven.notifier.TestContainersConfiguration;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)

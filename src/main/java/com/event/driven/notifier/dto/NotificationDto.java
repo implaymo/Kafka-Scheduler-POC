@@ -5,7 +5,7 @@
  * This software is the proprietary information of Present Technologies Lda.
  * Use is subject to license terms.
  */
-package com.event.driven.notifier.Dto;
+package com.event.driven.notifier.dto;
 
 import lombok.Builder;
 import lombok.Data;

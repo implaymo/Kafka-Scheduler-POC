@@ -5,7 +5,7 @@
  * This software is the proprietary information of Present Technologies Lda.
  * Use is subject to license terms.
  */
-package com.event.driven.notifier.Domain;
+package com.event.driven.notifier.domain;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

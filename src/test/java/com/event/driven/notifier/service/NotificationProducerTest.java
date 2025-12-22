@@ -1,4 +1,4 @@
-package com.event.driven.notifier.Service;
+package com.event.driven.notifier.service;
 
 
 import java.time.Duration;
@@ -10,8 +10,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.annotation.Import;
 import org.testcontainers.shaded.org.awaitility.Awaitility;
 
-import com.event.driven.notifier.Domain.Notification;
-import com.event.driven.notifier.Repository.NotificationRepository;
+import com.event.driven.notifier.domain.Notification;
+import com.event.driven.notifier.repository.NotificationRepository;
 import com.event.driven.notifier.TestContainersConfiguration;
 
 import static java.util.concurrent.TimeUnit.SECONDS;

@@ -1,4 +1,4 @@
-package com.event.driven.notifier.Dto;
+package com.event.driven.notifier.dto;
 
 import org.junit.jupiter.api.Test;
 
