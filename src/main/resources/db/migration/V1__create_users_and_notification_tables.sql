@@ -4,14 +4,11 @@ CREATE TABLE IF NOT EXISTS users (
     email VARCHAR(255) UNIQUE,
     name VARCHAR(255),
     password VARCHAR(255)
-    CONTRAINT pk_users PRIMARY KEY (id)
-);
+    );
 
 -- Create notification table
 CREATE TABLE IF NOT EXISTS notification (
     id BIGSERIAL PRIMARY KEY,
     notification_id VARCHAR(255),
     message TEXT
-    CONSTRAINT pk_notification PRIMARY KEY (id)
-);
-
+    );
