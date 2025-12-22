@@ -32,10 +32,8 @@ public class User {
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
 
-    @Email
     private String email;
     private String name;
-
     private String password;
 
 }
