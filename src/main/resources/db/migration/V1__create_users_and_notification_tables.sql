@@ -1,5 +1,5 @@
 -- Create users table
-CREATE TABLE users (
+CREATE TABLE IF NOT EXISTS users (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     email VARCHAR(255),
     name VARCHAR(255),
@@ -7,7 +7,7 @@ CREATE TABLE users (
 );
 
 -- Create notification table
-CREATE TABLE notification (
+CREATE TABLE IF NOT EXISTS notification (
     id BIGSERIAL PRIMARY KEY,
     notification_id VARCHAR(255),
     message TEXT
