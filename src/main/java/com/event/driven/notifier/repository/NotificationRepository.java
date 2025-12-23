@@ -13,7 +13,7 @@ import java.util.UUID;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.event.driven.notifier.domain.Notification;
+import com.event.driven.notifier.domain.entities.Notification;
 
 @Repository
 public interface NotificationRepository extends JpaRepository<Notification, UUID> {

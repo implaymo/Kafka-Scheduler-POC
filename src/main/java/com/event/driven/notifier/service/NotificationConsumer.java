@@ -17,7 +17,7 @@ import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.scheduling.TaskScheduler;
 import org.springframework.stereotype.Service;
 
-import com.event.driven.notifier.domain.Notification;
+import com.event.driven.notifier.domain.entities.Notification;
 
 @Slf4j
 @Service

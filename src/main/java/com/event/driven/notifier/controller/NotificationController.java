@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.event.driven.notifier.domain.Notification;
+import com.event.driven.notifier.domain.entities.Notification;
 import com.event.driven.notifier.dto.NotificationDto;
 import com.event.driven.notifier.mapper.NotificationMapperInterface;
 import com.event.driven.notifier.service.NotificationProducer;

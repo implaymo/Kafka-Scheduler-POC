@@ -1,4 +1,4 @@
-package com.event.driven.notifier.domain;
+package com.event.driven.notifier.domain.entities;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

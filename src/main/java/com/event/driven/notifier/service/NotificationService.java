@@ -12,7 +12,7 @@ import lombok.extern.slf4j.Slf4j;
 
 import org.springframework.stereotype.Service;
 
-import com.event.driven.notifier.domain.Notification;
+import com.event.driven.notifier.domain.entities.Notification;
 import com.event.driven.notifier.repository.NotificationRepository;
 
 @Slf4j

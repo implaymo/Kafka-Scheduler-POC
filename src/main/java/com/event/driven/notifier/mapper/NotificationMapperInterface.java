@@ -9,7 +9,7 @@ package com.event.driven.notifier.mapper;
 
 import org.mapstruct.Mapper;
 
-import com.event.driven.notifier.domain.Notification;
+import com.event.driven.notifier.domain.entities.Notification;
 import com.event.driven.notifier.dto.NotificationDto;
 
 

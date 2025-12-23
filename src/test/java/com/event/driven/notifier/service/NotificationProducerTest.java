@@ -10,7 +10,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.annotation.Import;
 import org.testcontainers.shaded.org.awaitility.Awaitility;
 
-import com.event.driven.notifier.domain.Notification;
+import com.event.driven.notifier.domain.entities.Notification;
 import com.event.driven.notifier.repository.NotificationRepository;
 import com.event.driven.notifier.TestContainersConfiguration;
 

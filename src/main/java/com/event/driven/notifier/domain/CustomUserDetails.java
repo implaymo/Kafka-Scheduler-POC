@@ -23,7 +23,6 @@ public class CustomUserDetails implements UserDetails {
 
     private final UUID id;
     private final String email;
-    private final String name;
     private final String password;
     private final Collection<? extends GrantedAuthority> authorities;
 
