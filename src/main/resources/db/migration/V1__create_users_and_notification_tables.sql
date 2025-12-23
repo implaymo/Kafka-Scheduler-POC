@@ -6,8 +6,7 @@ CREATE TABLE IF NOT EXISTS users (
     );
 
 CREATE TABLE IF NOT EXISTS notification (
-    id BIGSERIAL PRIMARY KEY,
-    notification_id VARCHAR(255),
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     message VARCHAR(255),
     user_id UUID NOT NULL,
     CONSTRAINT fk_user_id FOREIGN KEY (user_id) REFERENCES users(id)

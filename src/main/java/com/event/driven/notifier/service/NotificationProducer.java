@@ -23,13 +23,11 @@ import com.event.driven.notifier.domain.entities.Notification;
 @RequiredArgsConstructor
 public class NotificationProducer {
 
-    private final KafkaTemplate<String, Notification> kafkaTemplate;
-    private final String topicName = "notificationTopic";
+    private final KafkaTemplate<UUID, Notification> kafkaTemplate;
 
     public void sendNotification(Notification notification) {
-        UUID uuid = UUID.randomUUID();
-        notification.setNotificationID(uuid.toString());
-        kafkaTemplate.send(topicName, notification.getNotificationID(), notification);
+        String topicName = "notificationTopic";
+        kafkaTemplate.send(topicName, notification.getId(), notification);
         log.info("Message sent to Kafka: {}", notification);
     }
 }

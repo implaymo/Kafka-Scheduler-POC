@@ -7,15 +7,11 @@
  */
 package com.event.driven.notifier.repository;
 
-import java.util.Optional;
 import java.util.UUID;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
 
-import com.event.driven.notifier.domain.entities.Notification;
+import com.event.driven.notifier.domain.entities.User;
 
-@Repository
-public interface NotificationRepository extends JpaRepository<Notification, UUID> {
-    Optional<Notification> findByUserID(UUID userID);
+public interface UserRepository extends JpaRepository<User, UUID> {
 }
