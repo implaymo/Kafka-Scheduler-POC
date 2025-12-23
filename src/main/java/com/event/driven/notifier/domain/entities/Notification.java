@@ -10,6 +10,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.UUID;
+
 @Builder
 @Data
 @Entity(name = "notification")
@@ -25,4 +27,6 @@ public class Notification {
     private String notificationID;
 
     private String message;
+
+    private UUID userID;
 }

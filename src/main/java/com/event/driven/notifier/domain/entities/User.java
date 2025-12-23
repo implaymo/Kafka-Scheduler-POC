@@ -7,18 +7,24 @@
  */
 package com.event.driven.notifier.domain.entities;
 
+import jakarta.persistence.CollectionTable;
+import jakarta.persistence.Column;
+import jakarta.persistence.ElementCollection;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Set;
 import java.util.UUID;
 
 import com.event.driven.notifier.domain.Area;
@@ -40,10 +46,15 @@ public class User {
     private String name;
     private String password;
 
-    @Enumerated(value = EnumType.STRING)
-    private Role role;
+    @ElementCollection(targetClass = Role.class, fetch = FetchType.EAGER)
+    @CollectionTable(name = "user_roles", joinColumns = @JoinColumn(name = "user_id"))
+    @Column(name = "role")
+    @Enumerated(EnumType.STRING)
+    private Set<Role> roles;
 
-    @Enumerated(value = EnumType.STRING)
-    private Area area;
-
+    @ElementCollection(targetClass = Area.class, fetch = FetchType.EAGER)
+    @CollectionTable(name = "user_areas", joinColumns = @JoinColumn(name = "user_id"))
+    @Column(name = "area")
+    @Enumerated(EnumType.STRING)
+    private Set<Area> areas;
 }
